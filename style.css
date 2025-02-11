@@ -1,0 +1,249 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+   scroll-behavior: smooth; 
+}
+/* Navigation Bar */
+#navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+   /* height: 100px; */
+    top: 0px;
+    
+}
+
+/* Navigation Bar Logo and Image */
+    #logo{
+        margin: 10px 34px;
+    }
+    
+    #logo img {
+        margin: 3px 5px ;
+        height: 60px !important;
+        margin-left: .1px;
+        transition: transform 0.3s ease-in-out;
+    }
+    #logo img:hover{
+        transform: scale(1.2);
+    }
+
+    /* Navigation bar:List styling */
+    
+   
+    #navbar ul{
+        display: flex;
+        font-family: "Kanit", sans-serif;
+    }
+    #navbar ul li{
+      list-style: none;
+        color: rgb(140, 144, 148);
+        font-size: 1.3rem;
+    }
+    #navbar ul li a{
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        display: block;
+        padding: 3px 23px;
+        border-radius: 12px;
+        text-decoration: none;
+        
+    }
+    #navbar::before{
+        content: " ";
+        background-color:rgb(23 3 3);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.4;
+
+    }
+    #navbar ul li a:hover{
+        background-color: aliceblue;
+        color: black;
+        font-weight: normal;
+    }
+
+    /* Home section */
+    #home{
+        height: 740px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3px 200px;
+        justify-content: center;
+    }
+    #home::before{
+        content: " ";
+        background:url('../bg.jpg') no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.85;
+    }
+    #home h1{
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Bree serif',serif;
+    }
+    #home p{
+        font-family: 'Bree serif',serif;
+        color: white;
+    }
+    /* services Section */
+#service{
+    margin: 24px;
+    display: flex;
+}
+#service .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 5px;
+    border-radius: 14px;
+    background: #eeebeb;
+    
+}
+
+#service .box img{
+   height: 155px;
+   display: block;
+   margin: auto;
+   
+}
+.box img{
+    transition: transform 0.3s ease-in-out;
+}
+.box img:hover{
+    
+        transform: scale(1.3); 
+    
+} 
+/* Clients Section */
+#client{
+    height: 344px;
+}
+#clients{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.client1 img{
+    height: 150px;
+}
+.client1{
+    padding: 34px;
+}
+#client::before{
+    content: " ";
+    position: absolute;
+   
+    background: url('../bg1.webp') no-repeat center center/cover;
+    width: 100%;
+    height: 350px;
+    opacity: 0.3;
+    z-index: -1;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../contact.jpg');
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+
+    /* Utility Classes */
+    .hp{
+      font-size: 3.8rem;
+      padding: 12px;
+      font-family: 'Bree serif',serif;
+    }
+    .hp1{
+        text-align: center;
+        font-size: 2.3rem;
+        padding: 12px;
+        font-family: 'Bree serif',serif;
+    }
+    .hp2{
+        text-align: center;
+        font-family: 'Bree serif',serif;
+        /* font-size: 1.8rem; */
+    }
+    .hp3{
+        text-align: center;
+        font-family: 'Bree serif',serif;
+        font-size: 2.3rem;
+    }
+    .hp4{
+        text-align: center;
+        font-family: 'Bree serif',serif;
+        font-size: 2.3rem;
+
+    }
+    .btn{
+        padding: 6px 20px;
+        border: 2px solid white;
+        background-color: brown;
+        color: white;
+        margin: 17px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(101, 95, 85);
+        color: rgb(15, 9, 9);
+    }
+    .center{
+        text-align: center;
+        
+    }
+    footer{
+        padding: 9px 20px;
+        color:white;
+        background-color: black;
+    }
+
+    #box input,
+    #box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+    #box{
+        justify-content: center;
+        align-items: center;
+display: flex;
+padding-bottom: 34px;
+    }
+    #box form{
+        width: 40%;
+    
+    }
+    #box label{
+        font-size: 1.3rem;
+        font-family: 'Bree serif',serif ;
+    }
+    
+        
+        
+    
